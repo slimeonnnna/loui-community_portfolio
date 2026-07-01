@@ -8,31 +8,29 @@ const syne = Syne({ subsets: ["latin"] });
 const TimelineData = [
   {
     companyImg: "/company1.png",
-    jobTitle: "Senior DevOps Engineer",
-    company: "Bluechip Technologies",
-    jobType: "Full-time",
-    duration: "Mar 2024 - Present",
+    jobTitle: "SEO 策略师 / 增长顾问",
+    company: "MOTAWILL",
+    jobType: "增长合伙人",
+    duration: "2025 - 至今",
     stuffIDid: [
-      "Architected and implemented a comprehensive CI/CD pipeline using Jenkins and GitLab CI, reducing deployment time by 70% and improving release reliability.",
-      "Orchestrated migration of legacy applications to containerized microservices using Docker and Kubernetes, achieving 40% reduction in infrastructure costs.",
-      "Implemented Infrastructure as Code using Terraform and Ansible, automating the provisioning of cloud resources across AWS and Azure platforms.",
-      "Designed and deployed a robust monitoring solution using Prometheus and Grafana, achieving 99.99% system uptime and reducing incident response time by 60%.",
-      "Led the implementation of GitOps practices using ArgoCD, resulting in consistent deployment patterns and improved collaboration between development and operations teams.",
-      "Established security best practices including HashiCorp Vault for secrets management and implemented automated security scanning in the CI pipeline.",
+      "从0到1构建全站SEO策略，覆盖技术审计、关键词规划与内容策略",
+      "实施GEO/AEO优化，提升品牌在ChatGPT、Perplexity、Gemini等AI引擎中的可见性",
+      "通过CRO与着陆页优化，B2B询盘转化率提升88%",
+      "利用AI Agent自动化内容编排与API调用，提升内容生产效率",
+      "多市场国际化SEO策略（尼日利亚、乌干达等），实现流量与询盘的快速增长",
     ],
   },
   {
     companyImg: "/company1.png",
-    jobTitle: "DevOps Engineer",
-    company: "NNPC",
-    jobType: "Full-time",
-    duration: "July 2023 - Feb 2024",
+    jobTitle: "技术 SEO 顾问",
+    company: "TYCORUN",
+    jobType: "深度合作",
+    duration: "2023 - 至今",
     stuffIDid: [
-      "Developed and maintained automation scripts in Python and Bash, reducing manual operational tasks by 50%.",
-      "Implemented ELK Stack for centralized logging and monitoring, improving system observability and troubleshooting efficiency.",
-      "Managed AWS cloud infrastructure including EC2, S3, RDS, and Lambda, ensuring high availability and scalability of production systems.",
-      "Collaborated with development teams to optimize container images and Kubernetes configurations, resulting in 30% improvement in resource utilization.",
-      "Implemented automated backup and disaster recovery solutions, achieving RPO of 15 minutes and RTO of 1 hour.",
+      "负责Shopify电商站点的技术SEO架构搭建与优化",
+      "实施落页面结构化数据与站点速度优化，提升Google搜索可见性",
+      "执行技术SEO审计，解决索引、爬虫与Core Web Vitals问题",
+      "制定关键词策略与内容优化方案，推动自然搜索流量增长",
     ],
   },
 ];
@@ -40,7 +38,7 @@ const TimelineData = [
 export default function Timeline() {
   return (
     <div className="mt-10 md:mt-[110px]">
-      <Title> Work experience</Title>
+      <Title> 工作经历</Title>
 
       {/* THE THING, AFTER WHICH I WOULD DETERMINE THE HEIGHT */}
       <div className="flex mt-6 gap-4 pl-3">

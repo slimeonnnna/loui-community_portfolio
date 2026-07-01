@@ -73,7 +73,7 @@ export default function Hero() {
           transition={{ duration: 0.1, ease: "easeOut" }}
         >
           <p className="text-white/60 text-xl smm:text-2xl mb-3 smm:mb-0 lg:text-3xl col-span-6">
-            Hey, there
+            你好
           </p>
           <motion.div
             animate={handWaveAnimation}
@@ -84,7 +84,7 @@ export default function Hero() {
               src="/hand-wave.svg"
               width={30}
               height={30}
-              alt="hand-waving"
+              alt="挥手"
             />
           </motion.div>
         </motion.div>
@@ -93,24 +93,24 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
-          <p className="text-white/60 inline">I&apos;m </p>
+          <p className="text-white/60 inline">我是 </p>
           <span className="bg-gradient-to-br bg-clip-text text-transparent from-[#7CC0C4] via-[#548FBA] to-[#3C84C7]">
-          your_username
+          Lou
           </span>
-          <p>a DevOps Engineer</p>
+          <p className="text-white/60 text-2xl smm:text-3xl md:text-4xl lg:text-5xl mt-2">一名在探索中成长的SEO从业者</p>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={animateIn2}
-          className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
+          className="text-white/40 text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6"
         >
-          currently focused on scaling infra and reducing the workload.
+          在SEO的路上持续探索，用数据说话，让增长自然发生
         </motion.p>
       </div>
 
       {/* IMAGE */}
-      <div data-blobity-tooltip="Soft man">
+      <div data-blobity-tooltip="你好">
         <motion.div
           ref={imgRef}
           style={{ rotate }}
@@ -122,7 +122,7 @@ export default function Hero() {
             src="/image.png"
             priority
             fill
-            alt="Ade's picture"
+            alt="Lou 的照片"
             className="bg-image-radial px-10 pt-20"
           />
         </motion.div>

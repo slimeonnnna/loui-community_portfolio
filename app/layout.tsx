@@ -10,54 +10,51 @@ import { ViewProvider } from "@/contexts/ViewContext";
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your_name — DevOps Engineer",
+  title: "Lou — SEO 策略师 / 增长顾问",
   description:
-    "A DevOps Engineer passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
+    "SEO 策略师与增长顾问，专注 AI 搜索优化（GEO/AEO）、技术 SEO 审计、内容增长策略。3年以上经验，提供从0到1的品牌建立、多市场国际化与数据驱动增长服务。",
   keywords: [
-    "devops",
-    "frontend",
-    "react",
-    "tech",
-    "creative developer",
-    "UI development",
-    "frontend engineer",
-    "developer portfolio",
-    "creative development",
-    "nigeria",
-    "software",
-    "software developer",
-    "software engineer",
-    "portfolio",
+    "SEO",
+    "AI搜索优化",
+    "GEO",
+    "AEO",
+    "技术SEO",
+    "内容策略",
+    "WordPress SEO",
+    "Shopify SEO",
+    "Google Search Console",
+    "增长顾问",
+    "SEO策略师",
   ],
   openGraph: {
-    title: "Your_name — DevOps Engineer",
+    title: "Lou — SEO 策略师 / 增长顾问",
     description:
-      "DevOps Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    url: "https://www.your_name.me",
-    siteName: "www.your_name.me",
+      "SEO 策略师与增长顾问，专注 AI 搜索优化（GEO/AEO）、技术 SEO 审计、内容增长策略。3年以上经验，提供从0到1的品牌建立、多市场国际化与数据驱动增长服务。",
+    url: "https://loui.me",
+    siteName: "Lou Portfolio",
     images: [
       {
         url: "https://i.ibb.co/FKMqc28/adeola-badero.png",
         width: 1200,
         height: 630,
-        alt: "Your_name — DevOps Engineer",
+        alt: "Lou — SEO 策略师",
       },
       {
         url: "https://i.ibb.co/Y8hBTR4/ade-800.png",
         width: 800,
         height: 800,
-        alt: "Your_name — DevOps Engineer",
+        alt: "Lou — SEO 策略师",
       },
     ],
-    locale: "en-US",
+    locale: "zh-CN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your_name — DevOps Engineer",
+    title: "Lou — SEO 策略师 / 增长顾问",
     description:
-      "DevOps Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    creator: "@iemafzalhassan",
+      "SEO 策略师与增长顾问，专注 AI 搜索优化（GEO/AEO）、技术 SEO 审计、内容增长策略。",
+    creator: "@loui",
     images: ["https://i.ibb.co/FKMqc28/adeola-badero.png"],
   },
   robots: {
@@ -78,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body
         className={`${kumbhSans.className} max-w-[90%] xl:max-w-[1223px] w-full mx-auto overflow-x-hidden`}
       >

@@ -13,40 +13,38 @@ export default function Works() {
 
   const works = [
     {
-      title: "kubernetes-gitops-platform",
-      gitLink: "https://github.com/your_username/kubernetes-gitops-platform",
-      liveLink: "https://docs-kubernetes-gitops.example.com",
+      title: "MOTAWILL — 全站 SEO 策略与增长",
+      gitLink: "https://github.com/your_username/motawill-seo",
+      liveLink: "https://motawill.com",
       about:
-        "A production-grade GitOps platform built on Kubernetes using ArgoCD and Flux. Features automated deployment pipelines, infrastructure as code templates, and comprehensive monitoring setup with Prometheus and Grafana dashboards.",
-      stack: ["kubernetes", "argocd", "terraform", "prometheus", "golang"],
-      img: "/project.png",
+        "从0到1构建全站SEO策略，覆盖多市场国际化（尼日利亚、乌干达等）。通过技术审计、内容策略与AI搜索优化，实现流量/曝光/线索的快速增长。集成GEO/AEO优化，提升在AI引擎中的可见性。",
+      stack: ["SEO策略", "技术审计", "AI搜索优化", "内容策略", "WordPress"],
+      img: "/motawill-website.png",
     },
     {
-      title: "cloud-native-cicd",
-      gitLink: "https://github.com/your_username/cloud-native-cicd",
-      liveLink: "https://cloud-native-cicd.example.com",
+      title: "TYCORUN — Shopify 电商 SEO 增长",
+      gitLink: "https://github.com/your_username/tycorun-seo",
+      liveLink: "https://www.tycorun.com",
       about:
-        "Scalable CI/CD platform leveraging Jenkins, Docker, and Kubernetes. Implements infrastructure as code using Terraform for AWS resources, includes automated testing, security scanning, and blue-green deployment strategies.",
-      stack: ["jenkins", "docker", "aws", "terraform", "python"],
-      img: "/project.png",
+        "为TYCORUN（电池更换公司品牌）提供Shopify电商SEO全案服务，涵盖Shopify店铺SEO架构搭建、产品页面优化、结构化数据实施与关键词策略。通过数据驱动优化，显著提升自然搜索流量与B2B询盘转化。",
+      stack: ["Shopify", "电商SEO", "结构化数据", "关键词策略", "GA4"],
+      img: "/tycorun.png",
     },
     {
-      title: "infrastructure-monitoring-suite",
-      gitLink: "https://github.com/your_username/infrastructure-monitoring-suite",
-      liveLink: "https://monitoring-suite.example.com",
+      title: "JOEYOUNG — 制造业独立站 SEO",
+      gitLink: "https://github.com/your_username/joeyoung-seo",
+      liveLink: "https://www.solarinvertermanufacturers.com",
       about:
-        "Comprehensive monitoring solution combining ELK Stack for log aggregation, Prometheus for metrics collection, and custom Grafana dashboards. Features automated alerting, log parsing, and performance analytics.",
-      stack: ["elasticsearch", "prometheus", "grafana", "ansible", "python"],
-      img: "/project.png",
+        "为JOEYOUNG（太阳能逆变器制造商）提供独立站SEO策略,包括0-1品牌落地，技术SEO审计、工业品类关键词规划、多语言内容策略与站外优化。帮助制造业品牌拓展海外搜索可见性。",
+      stack: ["技术SEO", "工业品关键词", "制造业外贸", "多语言SEO", "内容策略"],
+      img: "/JOEYOUNG.png",
     },
     {
-      title: "container-security-platform",
-      gitLink: "https://github.com/your_username/container-security-platform",
-      liveLink: "https://security-platform.example.com",
+      title: "BENLG / SAMEBIKE / HUNTKEY 等多品牌代运营经验",
       about:
-        "Security-focused container platform implementing vulnerability scanning, secret management with HashiCorp Vault, and automated compliance checks. Includes CI/CD integration and real-time security monitoring.",
-      stack: ["docker", "vault", "kubernetes", "python", "bash"],
-      img: "/project.png",
+        "为BENLG、SAMEBIKE、HUNTKEY等多个品牌提供SEO代运营服务。涵盖独立站与电商平台优化，多品牌关键词矩阵搭建，内容策略批量输出，以及跨品牌数据分析与策略调整。",
+      stack: ["多品牌运营", "B2B-SEO", "内容批量策略", "数据分析", "CRO"],
+      img: "/samebike.png",
     },
   ];
 
@@ -65,13 +63,12 @@ export default function Works() {
       ref={ref}
       id="work"
     >
-      <Title>Projects</Title>
+      <Title>项目经历</Title>
       {works.map((work, index) => (
         <FolioCard
           key={index}
           img={work.img}
           title={work.title}
-          gitLink={work.gitLink}
           liveLink={work.liveLink}
           about={work.about}
           stack={work.stack}

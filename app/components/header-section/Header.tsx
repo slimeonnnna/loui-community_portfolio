@@ -16,10 +16,10 @@ export default function Header() {
       <div className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none">
         <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 std-backdrop-blur">
           <Image
-            src="/ade-logo.svg"
+            src="/loui-logo.svg"
             width={32}
             height={36}
-            alt="logo"
+            alt="Lou 标志"
             className="select-none"
           />
           <Icon
@@ -33,39 +33,36 @@ export default function Header() {
               href="#home"
               className={`${sectionInView === "home" && "text-white"} `}
             >
-              Home
+              首页
             </Link>
             <Link
               href="#work"
               className={`${sectionInView === "work" && "text-white"} `}
             >
-              Work
+              项目
             </Link>
             <Link
               href="#about"
               className={`${sectionInView === "about" && "text-white"} `}
             >
-              About
+              技能
             </Link>
             <Link
               href="#contact"
               className={`${sectionInView === "contact" && "text-white"} `}
             >
-              Contact
+              联系
             </Link>
           </ul>
           <div className="gap-5 text-xl hidden sm:flex">
             <Link
               target="_blank"
-              href="https://linkedin.com/in/your_username"
+              href="https://www.linkedin.com/in/amynos-l"
             >
               <Icon icon="hugeicons:linkedin-01" />
             </Link>
-            <Link target="_blank" href="https://github.com/your_username">
+            <Link target="_blank" href="https://github.com/slimeonnnna">
               <Icon icon="hugeicons:github" />
-            </Link>
-            <Link target="_blank" href="https://x.com/your_username">
-              <Icon icon="akar-icons:x-fill" />
             </Link>
           </div>
         </div>

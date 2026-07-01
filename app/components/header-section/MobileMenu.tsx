@@ -26,56 +26,46 @@ export default function MobileMenu({
           href="#home"
           className={`${sectionInView === "home" && "text-white"} w-fit`}
         >
-          Home
+          首页
         </Link>
         <Link
           href="#work"
           className={`${sectionInView === "work" && "text-white"} w-fit`}
         >
-          Work
+          项目
         </Link>
         <Link
           href="#about"
           className={`${sectionInView === "about" && "text-white"} w-fit`}
         >
-          About
+          技能
         </Link>
         <Link
           href="#contact"
           className={`${sectionInView === "contact" && "text-white"}  w-fit`}
         >
-          Contact
+          联系
         </Link>
       </ul>
 
       <div className="flex flex-col gap-3 z-20 items-center justify-center">
         <Link
-          className="p-4 flex-1 flex justify-center w-full rounded-xl h-fit text-4xl visited:bg-[#E3D3BE] bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
+          className="p-4 flex-1 flex justify-center w-full rounded-xl h-fit text-4xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
           target="_blank"
-          href="https://linkedin.com/in/your_username"
+          href="https://www.linkedin.com/in/amynos-l"
           data-blobity-radius="10"
         >
           <Icon icon="hugeicons:linkedin-01" />
         </Link>
 
-        <div className="flex gap-3 w-full">
-          <Link
-            className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
-            target="_blank"
-            href="https://github.com/your_username"
-            data-blobity-radius="10"
-          >
-            <Icon icon="hugeicons:github" />
-          </Link>
-          <Link
-            className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
-            target="_blank"
-            href="https://x.com/your_username"
-            data-blobity-radius="10"
-          >
-            <Icon icon="akar-icons:x-fill" />
-          </Link>
-        </div>
+        <Link
+          className="p-4 flex justify-center w-full rounded-xl h-fit text-2xl bg-gradient-to-r from-[#d9d9d915] to-[#7373731f] std-backdrop-blur"
+          target="_blank"
+          href="https://github.com/slimeonnnna"
+          data-blobity-radius="10"
+        >
+          <Icon icon="hugeicons:github" />
+        </Link>
       </div>
     </motion.div>
   );

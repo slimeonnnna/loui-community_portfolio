@@ -39,7 +39,7 @@ export default function TimelineItem({
         src="/position-icon.svg"
         width={24}
         height={24}
-        alt="current"
+        alt="当前位置"
         className="absolute -translate-x-[29px] sm:-translate-x-8 left-0"
       />
 
@@ -48,7 +48,7 @@ export default function TimelineItem({
           src={companyImg}
           width={70}
           height={70}
-          alt="company-image"
+          alt="公司标志"
           className="col-span-1"
         />
 

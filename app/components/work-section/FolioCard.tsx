@@ -12,15 +12,13 @@ import { useInView } from "react-intersection-observer";
 export default function FolioCard({
   title,
   img,
-  gitLink,
   liveLink,
   about,
   stack,
 }: {
   img: string;
   title: string;
-  gitLink?: string;
-  liveLink: string;
+  liveLink?: string;
   about: string;
   stack: string[];
 }) {
@@ -41,7 +39,7 @@ export default function FolioCard({
         src={img}
         width={420}
         height={700}
-        alt="work"
+        alt="项目截图"
         className="rounded-[10px] w-full lg:col-span-5"
       />
       <div className="flex flex-col gap-4 lg:col-span-7">
@@ -49,34 +47,20 @@ export default function FolioCard({
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
             {title}
           </h2>
-          <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
-            <Link
-              href={liveLink}
-              className="rounded-full bg-icon-radial p-3 hover:bg-red"
-              target="_blank"
-              aria-label="View Github Repo"
-              data-blobity-radius="34"
-              data-blobity-magnetic="true"
-            >
-              <Icon icon="line-md:external-link-rounded" />
-            </Link>
-            <Link
-              href={`${gitLink ? gitLink : "#"}`}
-              className="rounded-full bg-icon-radial p-3"
-              target="_blank"
-              aria-label="View Live Demo"
-              data-blobity-radius="34"
-              data-blobity-magnetic="true"
-              {...(!gitLink && {
-                "data-blobity-tooltip": "Privately owned by Offset",
-              })}
-            >
-              <Icon
-                icon="mingcute:github-line"
-                className={`${!gitLink && "opacity-30"}`}
-              />
-            </Link>
-          </div>
+          {liveLink && (
+            <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
+              <Link
+                href={liveLink}
+                className="rounded-full bg-icon-radial p-3 hover:bg-red"
+                target="_blank"
+                aria-label="查看网站"
+                data-blobity-radius="34"
+                data-blobity-magnetic="true"
+              >
+                <Icon icon="line-md:external-link-rounded" />
+              </Link>
+            </div>
+          )}
         </div>
         <p className="text-base text-white/70">{about}</p>
         <div className="flex gap-3 md:gap-4 flex-wrap">
