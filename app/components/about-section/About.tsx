@@ -22,8 +22,8 @@ const skillsData = [
     items: ["WordPress：主题架构、页面与内容优化、站点搭建与上线", "Shopify：店铺搭建、SEO 集成、产品页优化"],
   },
   {
-    title: "内容与关键词",
-    items: ["内容策略、关键词规划", "AI 辅助内容生成与片段/答案优化"],
+    title: "内容与营销",
+    items: ["内容策略、关键词规划、内容营销与社媒增长", "AI 辅助内容生成与片段/答案优化"],
   },
   {
     title: "AI Agent 辅助工作流",
@@ -32,10 +32,6 @@ const skillsData = [
   {
     title: "分析与转化",
     items: ["Google Search Console 分析、GA4", "Ahrefs / SEMrush 支持的数据驱动优化", "CRO 与着陆页/询盘优化（B2B 询盘转化 88%）"],
-  },
-  {
-    title: "数字营销",
-    items: ["内容营销与社媒增长"],
   },
   {
     title: "工具与技术栈",
@@ -55,12 +51,12 @@ export default function About() {
   const { setSectionInView } = useView();
 
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0,
     rootMargin: "-100px 0px",
   });
 
   useEffect(() => {
-    if (inView) setSectionInView("about");
+    setSectionInView("about", inView);
   }, [inView, setSectionInView]);
 
   return (
@@ -116,6 +112,7 @@ export default function About() {
           {skillsData.map((skillGroup, index) => (
             <div key={index}>
               <AnimatedTitle
+                as="h3"
                 wordSpace={"mr-[0.5ch]"}
                 charSpace={"mr-[0.001em]"}
                 className="font-bold antialiased text-xl md:text-2xl mb-2"

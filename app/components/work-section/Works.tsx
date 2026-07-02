@@ -54,7 +54,7 @@ export default function Works() {
   });
 
   useEffect(() => {
-    if (inView) setSectionInView("work");
+    setSectionInView("work", inView);
   }, [inView, setSectionInView]);
 
   return (

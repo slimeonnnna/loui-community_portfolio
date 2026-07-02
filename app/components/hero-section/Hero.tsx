@@ -54,7 +54,7 @@ export default function Hero() {
   });
 
   useEffect(() => {
-    if (inView) setSectionInView("home");
+    setSectionInView("home", inView);
   }, [inView, setSectionInView]);
 
   const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "-15deg"]);

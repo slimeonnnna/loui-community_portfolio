@@ -55,7 +55,7 @@ export default function TimelineItem({
         {/* ALL THE TEXT*/}
         <div className={`${styles.timeline} col-span-4`}>
           <div className="leading-tight">
-            <h1 className="text-2xl sm:text-[2rem] font-bold">{jobTitle}</h1>
+            <h3 className="text-2xl sm:text-[2rem] font-bold">{jobTitle}</h3>
             <p className="text-base sm:text-lg font-bold my-2 sm:my-3">
               {company} | {jobType}
             </p>

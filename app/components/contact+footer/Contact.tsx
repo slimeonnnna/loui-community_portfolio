@@ -20,7 +20,7 @@ export default function Contact() {
   });
 
   useEffect(() => {
-    if (inView) setSectionInView("contact");
+    setSectionInView("contact", inView);
   }, [inView, setSectionInView]);
 
   return (
@@ -37,12 +37,9 @@ export default function Contact() {
         >
           和我联系？
         </AnimatedTitle>
-        <a
-          href="mailto:914394053@qq.com"
-          className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold ml-3 underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all cursor-pointer"
-        >
+        <span className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold ml-3">
           914394053@qq.com
-        </a>
+        </span>
       </section>
     </>
   );

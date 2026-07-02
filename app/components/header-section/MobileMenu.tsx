@@ -38,7 +38,7 @@ export default function MobileMenu({
           href="#about"
           className={`${sectionInView === "about" && "text-white"} w-fit`}
         >
-          技能
+          故事
         </Link>
         <Link
           href="#contact"

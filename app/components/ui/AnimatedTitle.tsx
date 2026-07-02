@@ -11,6 +11,7 @@ type AnimatedTitleProps = {
   wordSpace: string;
   charSpace: string;
   delay?: number;
+  as?: "h2" | "h3";
 };
 
 export default function AnimatedTitle({
@@ -18,6 +19,7 @@ export default function AnimatedTitle({
   className,
   wordSpace,
   charSpace,
+  as = "h2",
 }: AnimatedTitleProps) {
   const ctrls = useAnimation();
 
@@ -55,38 +57,40 @@ export default function AnimatedTitle({
     },
   };
 
-  return (
-    <h2 role="heading" className={className}>
-      {children.split(" ").map((word, index) => {
-        return (
-          <motion.span
-            ref={ref}
-            aria-hidden="true"
-            key={index}
-            initial="hidden"
-            animate={ctrls}
-            variants={wordAnimation}
-            transition={{
-              delayChildren: index * 0.25,
-              staggerChildren: 0.05,
-            }}
-            className={`inline-block whitespace-nowrap select-none ${wordSpace}`}
-          >
-            {word.split("").map((character, index) => {
-              return (
-                <motion.span
-                  aria-hidden="true"
-                  key={index}
-                  variants={characterAnimation}
-                  className={`inline-block ${charSpace}`}
-                >
-                  {character}
-                </motion.span>
-              );
-            })}
-          </motion.span>
-        );
-      })}
-    </h2>
-  );
+  const content = children.split(" ").map((word, index) => {
+    return (
+      <motion.span
+        ref={ref}
+        aria-hidden="true"
+        key={index}
+        initial="hidden"
+        animate={ctrls}
+        variants={wordAnimation}
+        transition={{
+          delayChildren: index * 0.25,
+          staggerChildren: 0.05,
+        }}
+        className={`inline-block whitespace-nowrap select-none ${wordSpace}`}
+      >
+        {word.split("").map((character, index) => {
+          return (
+            <motion.span
+              aria-hidden="true"
+              key={index}
+              variants={characterAnimation}
+              className={`inline-block ${charSpace}`}
+            >
+              {character}
+            </motion.span>
+          );
+        })}
+      </motion.span>
+    );
+  });
+
+  if (as === "h3") {
+    return <h3 className={className}>{content}</h3>;
+  }
+
+  return <h2 className={className}>{content}</h2>;
 }

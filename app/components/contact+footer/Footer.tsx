@@ -21,7 +21,7 @@ export default function Footer() {
         href="#home"
         data-blobity-offset-x="2"
         data-blobity-offset-y="0"
-        onClick={() => setSectionInView("home")}
+        onClick={() => setSectionInView("home", true)}
       >
         <Icon icon="mdi:arrow-top" className="text-2xl rounded-2xlt" />
         <p className="underline leading-tight">回到顶部</p>

@@ -45,7 +45,7 @@ export default function Header() {
               href="#about"
               className={`${sectionInView === "about" && "text-white"} `}
             >
-              技能
+              故事
             </Link>
             <Link
               href="#contact"

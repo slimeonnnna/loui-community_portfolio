@@ -13,12 +13,12 @@ export default function Title({ children }: { children: React.ReactNode }) {
   const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 0.6]);
 
   return (
-    <motion.h1
+    <motion.h2
       ref={titleRef}
       style={{ opacity }}
       className={`uppercase ${syne.className} text-4xl md:text-5xl xl:text-6xl font-bold`}
     >
       {children}
-    </motion.h1>
+    </motion.h2>
   );
 }

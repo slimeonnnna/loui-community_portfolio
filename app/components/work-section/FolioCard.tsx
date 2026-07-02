@@ -44,9 +44,9 @@ export default function FolioCard({
       />
       <div className="flex flex-col gap-4 lg:col-span-7">
         <div className="flex items-center justify-between">
-          <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
+          <h3 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
             {title}
-          </h2>
+          </h3>
           {liveLink && (
             <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
               <Link
