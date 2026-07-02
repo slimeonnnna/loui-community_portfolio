@@ -58,11 +58,11 @@ export const metadata: Metadata = {
     images: ["https://i.ibb.co/FKMqc28/adeola-badero.png"],
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
     nocache: false,
     googleBot: {
-      index: true,
+      index: false,
       "max-image-preview": "large",
     },
   },
